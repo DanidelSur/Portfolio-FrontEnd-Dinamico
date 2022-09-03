@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+img {
+  max-width: 250px;
+  border-radius: 15px;
+}
+h2 {
+  text-align: center;
+}
