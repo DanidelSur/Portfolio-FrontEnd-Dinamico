@@ -1,8 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
-img {
-  max-width: 250px;
-  border-radius: 15px;
+body {
+  background: rgba(0, 0, 0, 0.46);
+  background-image: url(../src/assets/Lago.puelo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: whitesmoke;
 }
-h2 {
+main {
+  padding: 0 50px 0 50px;
+  margin-bottom: 10vh;
+}
+article,
+button,
+img,
+span {
+  transition: 0.5s linear;
+  /* color: wheat; */
+}
+h1,
+h2,
+h3,
+h4 {
+  transition: 0.5s linear;
   text-align: center;
 }

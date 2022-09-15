@@ -1,0 +1,108 @@
+{
+  "about": {
+    "parrafouno": "Esta es una breve descripción de mi Trabajo Integrador y Portfolio:",
+    "parrafodos": "Gracias al curso 'Argentina Programa', Me estoy desarrollando como...",
+    "parrafotres": "Me complace decir que este portfolio pude realizarlo mediante mis conocimientos aprendidos como ‘Front End’. Descubrí que me interesa mucho la presentación y la composición del mismo, los aportes que pueda dar y las ideas que pueda capturar, Me emociona aún más imaginar los futuros trabajos dinamicos que llegare a realizar y terminar. ¡Doy fe que voy a desarrollarme paso a paso para llegar a ser un “developer” eficiente, con los esfuerzos que se requieran! :D",
+    "Extra": "Estoy desarrollando mis habilidades en: ",
+    "ExtraHab": "HTML , CSS , JAVASCRIPT , TYPESCRIPT , ANGULAR CLI , SQL , JAVA ...",
+    "Final": "Sigo Aprendiendo..."
+  },
+  "exp": [
+    {
+      "name": "Front-End",
+      "description": "El front-end developer se encarga de construir la parte visible y la experiencia de usuario de un sitio web, una aplicación, un sistema digital. Por lo tanto, trabaja en la interfaz pero no se limita a concebir la parte gráfica de un objeto digital.",
+      "start": "02/02/2017",
+      "end": "09/09/2030"
+    },
+    {
+      "name": "Back-End",
+      "description": "El Back End Developer es la persona encargada de la implementación de un sitio web o aplicación web en todos sus componentes, y se ocupa de diseñar la lógica y las soluciones para que las acciones solicitadas en un sitio o aplicación web sean ejecutadas correctamente.",
+      "start": "10/01/2015",
+      "end": "20/12/2018"
+    },
+    {
+      "name": "Agregar Nombre de Experiencia",
+      "description": "Ingrese Descripcion",
+      "start": "00/00/0000",
+      "end": "00/00/0000"
+    }
+  ],
+  "edu": [
+    {
+      "name": "Colegio Secundario N°765 'Roca del Tiempo'",
+      "description": "Ubicado en la ciudad de Lago Puelo, Chubut. Egresado en Orientacion a Bachillerato de Educación Fisica. ",
+      "start": "07/03/2011",
+      "end": "13/12/2017"
+    },
+    {
+      "name": "Diagnostico y Mantenimiento de PC",
+      "description": "Curso de informatica, con el objetivo de aprender sobre... Redes Lan, Hardware del Pc, Sistemas Operativos.",
+      "start": "04/10/2016",
+      "end": "10/03/2017"
+    },
+    {
+      "name": "Agregar Nombre de Educación",
+      "description": "Ingrese Descripcion",
+      "start": "00/00/0000",
+      "end": "00/00/0000"
+    }
+  ],
+  "habilidad": [
+    {
+      "name": "HTML",
+      "bstrap": "bg-danger",
+      "img": "../../../assets/Habilidades/HTML.png",
+      "nivel": "60%"
+    },
+    {
+      "name": "CSS",
+      "bstrap": "bg-primary",
+      "img": "../../../assets/Habilidades/CSS.png",
+      "nivel": "75%"
+    },
+    {
+      "name": "JAVASCRIPT",
+      "bstrap": "bg-warning",
+      "img": "../../../assets/Habilidades/JAVASCRIPT.png",
+      "nivel": "50%"
+    },
+    {
+      "name": "TYPESCRIPT",
+      "bstrap": "bg-secondary",
+      "img": "../../../assets/Habilidades/TYPESCRIPT.png",
+      "nivel": "50%"
+    },
+    {
+      "name": "ANGULAR cli",
+      "bstrap": "bg-danger",
+      "img": "../../../assets/Habilidades/angular.png",
+      "nivel": "60%"
+    },
+    {
+      "name": "MySQL",
+      "bstrap": "bg-info",
+      "img": "../../../assets/Habilidades/MySQL.png",
+      "nivel": "40%"
+    },
+    {
+      "name": "JAVA",
+      "bstrap": "bg-success",
+      "img": "../../../assets/Habilidades/JAVA.png",
+      "nivel": "30%"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Portfolio",
+      "img": "../../../assets/Proyectos/Portfolio.png",
+      "description": "Portfolio Web Personal, Desarrollado por los conocimientos Aprendidos del Curso 'ARGENTINA PROGRAMA', cuyo objetivo es Aprender Conocimientos del Desarrollo Web y de la Programacion.",
+      "direccion": "www.chodilef.com.ar"
+    },
+    {
+      "name": "Agregar Nombre de Proyecto",
+      "img": "../../../assets/Proyectos/Proyectos.png",
+      "description": "Ingrese Descripcion",
+      "direccion": "www.proyecto.com.ar"
+    }
+  ]
+}

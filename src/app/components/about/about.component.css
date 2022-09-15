@@ -1,0 +1,25 @@
+#perfil {
+  background-image: url(../../../assets/AcercaDe/Puelo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  padding: 5%;
+}
+img {
+  min-width: 20px;
+  max-width: 400px;
+  border-radius: 100%;
+  box-shadow: 0 0 50px slateblue;
+  align-items: center;
+  background: #00000080;
+}
+section {
+  padding: 1%;
+  font-family: inherit;
+  font-size: 20px;
+  text-shadow: 0 0 10px black, 0 0 20px black;
+}
+main:hover span {
+  color: skyblue;
+}

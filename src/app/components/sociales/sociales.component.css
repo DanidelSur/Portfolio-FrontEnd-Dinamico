@@ -1,0 +1,12 @@
+img {
+  max-width: 150px;
+}
+article {
+  margin: 5px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+article:hover {
+  box-shadow: 0 0 10px whitesmoke;
+}
