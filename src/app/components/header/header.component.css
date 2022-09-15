@@ -1,4 +1,40 @@
 header {
+  margin-top: 5rem;
   text-align: center;
-  background-image: url(../../../assets/Imagenes/Banner.png);
+}
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 124px;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: -25px;
+}
+hr {
+  transition: 1s linear;
+  opacity: 15%;
+  color: blanchedalmond;
+  /* display: flex; */
+  /* align-content: center; */
+  width: 25%;
+}
+button {
+  margin: 25px;
+  transform: translateY(100px);
+}
+/* ?Effectos */
+main:hover hr {
+  opacity: 75%;
+  color: wheat;
+  width: 75%;
+}
+main:hover h1 {
+  color: white;
+  text-shadow: 0 0 1px skyblue, 0 0 5px wheat, 0 0 10px lightskyblue;
+}
+span {
+  transition: 1s linear;
+}
+button:hover span {
+  content: "Comenzar";
 }

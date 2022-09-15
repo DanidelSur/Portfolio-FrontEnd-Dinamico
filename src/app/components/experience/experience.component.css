@@ -1,0 +1,24 @@
+img {
+  max-width: 240px;
+}
+
+article {
+  /* text-align: center; */
+  margin: 10px 0 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(#000000a2, #c1c1c100);
+}
+
+h4 {
+  margin: 0;
+  padding: 3px;
+  border-bottom: 1px solid seagreen;
+  /* border: 2px solid black; */
+}
+
+article:hover {
+  /* background: black; */
+  background: linear-gradient(#000000a2, #00b30652);
+  box-shadow: 0 0 10px white;
+}

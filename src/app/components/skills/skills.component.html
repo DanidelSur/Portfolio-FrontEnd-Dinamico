@@ -1,24 +1,140 @@
-<p>skills works!</p>
-<section class="card bg-danger">
-  <h2 class="card-header">Habilidades</h2>
-  <div class="card-body d-flex">
-    <img src="../../../assets/Imagenes/Habilidades.png" alt="" />
-    <ul>
+<!-- <app-navbar></app-navbar> -->
+<main class="container">
+  <h2>
+    Habilidades
+    <button class="btn-sm btn btn-outline-success">Edit</button>
+  </h2>
+  <hr />
+  <section>
+    <ul *ngFor="let Skill of habilidades">
       <li>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-        voluptas reiciendis ducimus fugiat hic animi quasi eligendi neque eaque
-        qui ut corrupti, labore dolore velit, veritatis sint magni natus
-        doloremque!
-      </li>
-      <li>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-        voluptas reiciendis ducimus fugiat hic animi quasi eligendi neque eaque
-        qui ut corrupti, labore dolore velit, veritatis sint magni natus
-        doloremque!
-      </li>
-      <li>
-        <input type="range" name="" id="" />
+        <article class="d-flex align-items-center">
+          <img [src]="Skill.img" alt="" />
+          <!-- <div> -->
+          <!-- <div> -->
+          <div class="w-100 container">
+            <h3>{{ Skill.name }}</h3>
+            <div class="progress bg-black border-end">
+              <div
+                class="progress-bar progress-bar-striped {{
+                  Skill.bstrap
+                }} progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: {{ Skill.nivel }}"
+              ></div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <!-- </div> -->
+        </article>
       </li>
     </ul>
-  </div>
-</section>
+    <!-- 
+    <article class="d-flex align-items-center">
+      <img src="../../../assets/Habilidades/CSS.png" alt="" />
+      <div class="w-100 container">
+        <h3>CSS</h3>
+
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            role="progressbar"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 60%"
+          >
+            {{ progreso }}
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="d-flex align-items-center">
+      <img src="../../../assets/Habilidades/JAVASCRIPT.png" alt="" />
+      <div class="w-100 container">
+        <h3>JAVASCRIPT</h3>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
+            role="progressbar"
+            aria-valuenow="0"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 50%"
+          ></div>
+        </div>
+      </div>
+    </article>
+    <article class="d-flex align-items-center">
+      <img src="../../../assets/Habilidades/TYPESCRIPT.png" alt="" />
+      <div class="w-100 container">
+        <h3>TYPESCRIPT</h3>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped bg-primary progress-bar-animated"
+            role="progressbar"
+            aria-valuenow="0"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 75%"
+          ></div>
+        </div>
+      </div>
+    </article>
+    <article class="d-flex align-items-center">
+      <img src="../../../assets/Habilidades/angular.png" alt="" />
+      <div class="w-100 container">
+        <h3>ANGULAR CLI</h3>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+            role="progressbar"
+            aria-valuenow="0"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 30%"
+          ></div>
+        </div>
+
+      </div>
+    </article>
+    <article class="d-flex align-items-center">
+      <img src="../../../assets/Habilidades/MySQL.png" alt="" />
+      <div class="w-100 container">
+        <h3>MySQL</h3>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped bg-info progress-bar-animated"
+            role="progressbar"
+            aria-valuenow="0"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 40%"
+          ></div>
+        </div>
+
+      </div>
+    </article>
+    <article class="d-flex align-items-center">
+      <img src="../../../assets/Habilidades/JAVA.png" alt="" />
+      <div class="w-100 container">
+        <h3>JAVA</h3>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+            role="progressbar"
+            aria-valuenow="0"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 30%"
+          ></div>
+        </div>
+      </div>
+    </article>
+     -->
+  </section>
+</main>
+<app-footer></app-footer>

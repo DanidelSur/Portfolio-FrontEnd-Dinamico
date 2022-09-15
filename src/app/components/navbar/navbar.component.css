@@ -1,0 +1,22 @@
+img {
+  max-width: 250px;
+  background: none;
+  border-radius: 100%;
+}
+button {
+  background: none;
+  border: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  /* margin: 5px; */
+}
+button img {
+  padding: 10px;
+  max-width: 110px;
+}
+button img:hover {
+  filter: drop-shadow(0 0 10px white);
+}

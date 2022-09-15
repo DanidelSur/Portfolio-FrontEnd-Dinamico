@@ -1,26 +1,55 @@
-<p>about works!</p>
-
-<section class="card bg-primary">
-  <h2 class="card-header">Acerca de</h2>
-  <div class="card-body d-flex">
-    <img src="../../../assets/Imagenes/Perfil.jpeg" alt="" />
-    <ul>
-      <li>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit veniam
-        voluptas, quos dignissimos, accusantium esse excepturi odit delectus id
-        enim voluptatibus animi cupiditate suscipit asperiores nemo magnam,
-        similique ullam nobis. Atque inventore eligendi excepturi eum
-        necessitatibus, quo praesentium non modi dolor voluptas minus qui,
-        mollitia laborum, totam expedita reiciendis sapiente. Velit placeat
-        numquam sequi a sunt impedit molestias. Sequi, doloremque. Accusantium
-        quibusdam veritatis nulla tempora? Amet atque natus molestiae. Illo
-        numquam hic facere veritatis assumenda optio laudantium sapiente enim
-        nobis iure at dolore, quia repudiandae tenetur est unde aspernatur ut.
-        Labore commodi inventore in quos ipsum aut unde quis minima alias
-        impedit delectus hic provident, illo sed officia ex, magnam veniam esse
-        repellendus, debitis consectetur quia? Labore soluta distinctio
-        suscipit.
-      </li>
-    </ul>
-  </div>
-</section>
+<!-- <app-navbar></app-navbar> -->
+<main>
+  <section class="row">
+    <!-- ?FotoBanner -->
+    <div
+      id="perfil"
+      class="col-lg-4 justify-content-center d-grid align-content-center mx-auto"
+    >
+      <button class="btn btn-sm btn-outline-dark text-warning mx-auto">
+        Editar Foto
+      </button>
+      <img
+        src="../../../assets/AcercaDe/Perfil.JPG"
+        class="img-fluid p-1 mt-1 mx-auto"
+        alt=""
+      />
+      <hr />
+      <p class="text-center">Marcelo Daniel Chodilef</p>
+    </div>
+    <!-- ?AcercaDe -->
+    <div class="col-lg-8 bg-gradient bg-black">
+      <div class="d-flex justify-content-between align-items-center pt-3">
+        <h2>Portfolio</h2>
+        <button class="btn btn-outline-light btn-sm">Editar About</button>
+      </div>
+      <span><hr /></span>
+      <!--! PARRAFOS DE BASE DE DATOS -->
+      <article class="card-body">
+        <p>
+          {{ acercaDe.parrafouno }}
+          <span>
+            <b> {{ title }}. </b>
+          </span>
+          <br />
+          {{ acercaDe.parrafodos }}
+          <b> {{ subtitle }}</b>
+        </p>
+        <br />
+        <p>
+          {{ acercaDe.parrafotres }}
+        </p>
+        <br />
+        <p class="mt-5 text-center">
+          {{ acercaDe.Extra }}<br />
+          <b class="text-warning">
+            {{ acercaDe.ExtraHab }}
+          </b>
+          <br />
+          <i class="text-secondary"> {{ acercaDe.Final }} </i>
+        </p>
+      </article>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>
