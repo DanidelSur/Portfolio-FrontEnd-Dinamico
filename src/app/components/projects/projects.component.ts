@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { tap } from 'rxjs';
 import { PortfolioService } from 'src/app/Service/portfolio.service';
 
 @Component({
@@ -9,11 +10,12 @@ import { PortfolioService } from 'src/app/Service/portfolio.service';
 export class ProjectsComponent implements OnInit {
   proyectos: any;
 
-  constructor(private pytos: PortfolioService) {}
+  constructor(private svcPro: PortfolioService) {}
 
   ngOnInit(): void {
-    this.pytos.ObtenerDatos().subscribe((data) => {
-      this.proyectos = data.projects;
-    });
+    this.svcPro
+      .datosPro()
+      .pipe(tap((res) => (this.proyectos = res)))
+      .subscribe();
   }
 }

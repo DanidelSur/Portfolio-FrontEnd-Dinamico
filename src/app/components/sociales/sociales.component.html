@@ -1,48 +1,19 @@
-<!-- <app-navbar></app-navbar> -->
-<main>
-  <section class="row container mx-auto">
-    <article class="col-md">
-      <a href="https://www.facebook.com/">
-        <img src="../../../assets/RedesSociales/facebook.png" alt="" />
-      </a>
-
-      <h4>Faceboook</h4>
-    </article>
-    <article class="col-md">
-      <img src="../../../assets/RedesSociales/github.png" alt="" />
-
-      <h4>Github</h4>
-    </article>
-    <article class="col-md">
-      <img src="../../../assets/RedesSociales/instagram.png" alt="" />
-
-      <h4>Instagram</h4>
-    </article>
-    <article class="col-md">
-      <img src="../../../assets/RedesSociales/Gmail_icon.png" alt="" />
-
-      <h4>Gmail</h4>
-    </article>
-    <article class="col-md">
-      <img src="../../../assets/RedesSociales/Telegram_icon.png" alt="" />
-
-      <h4>Telegram</h4>
-    </article>
-    <article class="col-md">
-      <img src="../../../assets/RedesSociales/Twitter_icon.png" alt="" />
-
-      <h4>Twitter</h4>
-    </article>
-    <article class="col-md">
-      <img src="../../../assets/RedesSociales/Whatsapp_icon.png" alt="" />
-
-      <h4>Whatsapp</h4>
-    </article>
-    <!-- <article class="col-md disabled">
-      <img src="../../../assets/Extras/Agregar_icon.png" alt="" />
-
-      <h4>Agregar</h4>
-    </article> -->
+<main class="container">
+  <h2>Mis Redes Sociales</h2>
+  <p class="lead text-center text-danger">Ponte en contacto conmigo.</p>
+  <hr />
+  <br />
+  <section class="d-flex row">
+    <ul *ngFor="let sl of sociales" class="col-md">
+      <li>
+        <article>
+          <a [href]="sl.enlace">
+            <img [src]="sl.imagen" alt="" />
+          </a>
+          <h4>{{ sl.redsocial }}</h4>
+        </article>
+      </li>
+    </ul>
   </section>
 </main>
 

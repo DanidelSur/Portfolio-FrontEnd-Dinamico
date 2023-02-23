@@ -8,9 +8,6 @@ article {
   padding: 10px;
   width: auto;
 }
-h3 {
-  box-shadow: 0 1px 0 orangered;
-}
 article:hover {
   background: linear-gradient(#00000080, #ff000067);
   box-shadow: 0 0 10px white;

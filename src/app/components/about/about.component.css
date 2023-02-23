@@ -23,3 +23,13 @@ section {
 main:hover span {
   color: skyblue;
 }
+span b {
+  font-family: consolas, monospace;
+  font-size: 24px;
+  font-style: oblique;
+}
+.name {
+  font-family: consolas;
+  font-size: 24px;
+  text-shadow: 0 0 10px burlywood, 2px -1px 3px black;
+}

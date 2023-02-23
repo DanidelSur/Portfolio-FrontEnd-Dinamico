@@ -12,17 +12,34 @@ main {
   padding: 0 50px 0 50px;
   margin-bottom: 10vh;
 }
+footer {
+  transition: 0.5s linear;
+}
 article,
 button,
 img,
 span {
   transition: 0.5s linear;
-  /* color: wheat; */
 }
 h1,
 h2,
 h3,
 h4 {
+  /* font-family: consolas; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.5s linear;
   text-align: center;
+}
+/* ?SCROLLBAR */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkslategrey;
+  border-radius: 5px;
 }

@@ -2,7 +2,9 @@
 <main class="container">
   <h2>
     Laburos
-    <button class="btn btn-outline-success btn-sm">Editar Experiencias</button>
+    <button class="btn btn-outline-success rounded-pill btn-sm disabled">
+      Edit
+    </button>
   </h2>
 
   <hr />
@@ -13,15 +15,13 @@
         <article class="col-md-auto">
           <h4>
             {{ exps.name }}
-            <button class="btn btn-sm btn-success">editar</button>
+            <!-- <button class="btn btn-sm btn-success disabled rounded-pill">
+              Editar
+            </button> -->
           </h4>
 
-          <div class="row">
-            <img
-              src="../../../assets/Experiencias/programador.png"
-              class="col-lg d-grid mx-auto"
-              alt=""
-            />
+          <div class="row p-2">
+            <img [src]="exps.imagen" class="col-lg d-grid mx-auto" alt="" />
             <!-- <hr /> -->
             <div class="col-lg container m-3">
               <b class="h5">Descripción: </b>

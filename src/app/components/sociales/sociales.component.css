@@ -1,12 +1,22 @@
 img {
   max-width: 150px;
 }
+li {
+  list-style: none;
+}
+main {
+  transform: translateY(10%);
+}
 article {
   margin: 5px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.4);
+  /* background: rgba(0, 0, 0, 0.4); */
   border-radius: 12px;
+  text-shadow: 0 0 5px black;
 }
-article:hover {
-  box-shadow: 0 0 10px whitesmoke;
+img:hover {
+  filter: drop-shadow(0 0 10px whitesmoke);
+}
+p {
+  text-shadow: 1px 1px 5px black;
 }

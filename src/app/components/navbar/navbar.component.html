@@ -1,18 +1,50 @@
-<!-- <main> -->
-<nav class="fixed-top sticky-top">
+<nav class="fixed-top sticky-top background">
   <img
     src="../../../assets/img/Argentina_Programa_LOGO.png"
     class="ps-5"
     alt=""
   />
-
-  <!-- !Prueba -->
-
   <!-- ?LOGIN -->
   <div>
-    <button type="submit" class="pe-5" id="entrar">
+    <button
+      type="button"
+      class="pe-5"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
       <img src="../../../assets/Extras/Login Dark.png" alt="" />
     </button>
   </div>
 </nav>
-<!-- </main> -->
+
+<div
+  class="offcanvas offcanvas-end text-dark"
+  tabindex="-1"
+  id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Iniciar Sesión</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <form action="">
+      <label for="">Cerrar Sesion Aqui </label><br />
+      <button class="">Close</button>
+      <br />
+      <label for="">Iniciar Sesion Aparte </label> <br />
+      <button>Ir a Login</button>
+      <hr />
+
+      <button type="submit" class="d-grid mx-auto" (click)="login()">
+        <b>Entrar</b>
+      </button>
+    </form>
+  </div>
+</div>

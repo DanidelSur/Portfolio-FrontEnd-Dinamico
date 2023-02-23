@@ -1,7 +1,30 @@
 ul {
   list-style: none;
+  margin-bottom: 0;
   /* display: flex; */
 }
 li {
   margin: 1%;
+}
+.bm {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-left-radius: 0ch;
+  border-bottom-right-radius: 0%;
+}
+footer {
+  border-start-end-radius: 10%;
+  border-top-left-radius: 10%;
+  /* width: 0 -50px 0 -50px; */
+  transition: 0.5s linear;
+  opacity: 75%;
+  /* background-image: url(); */
+  background: hsla(0, 0%, 0%, 0.5);
+  /* background: linear-gradient(rgba(47, 79, 79, 0), rgba(0, 0, 0, 0.617)); */
+}
+footer:hover {
+  box-shadow: 0 0 10px darkslategrey;
+  opacity: 100%;
+  background: linear-gradient(rgba(47, 79, 79, 0.424), rgb(0, 0, 0));
 }

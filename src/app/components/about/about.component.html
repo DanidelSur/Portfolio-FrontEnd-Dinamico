@@ -4,52 +4,112 @@
     <!-- ?FotoBanner -->
     <div
       id="perfil"
-      class="col-lg-4 justify-content-center d-grid align-content-center mx-auto"
+      class="col-xl-4 justify-content-center d-grid align-content-center mx-auto"
+      *ngFor="let p of persona"
     >
-      <button class="btn btn-sm btn-outline-dark text-warning mx-auto">
+      <button
+        class="btn btn-sm btn-outline-dark text-warning mx-auto disabled rounded-pill"
+      >
         Editar Foto
       </button>
-      <img
-        src="../../../assets/AcercaDe/Perfil.JPG"
-        class="img-fluid p-1 mt-1 mx-auto"
-        alt=""
-      />
+      <!-- <img [src]="admin.foto.src" class="img-fluid p-1 mt-1 mx-auto" alt="" /> -->
+      <!-- <img [src]="imgf.src" class="img-fluid p-1 mt-1 mx-auto" alt="" /> -->
+      <img [src]="p.foto" class="img-fluid p-1 mt-1 mx-auto" alt="" />
       <hr />
-      <p class="text-center">Marcelo Daniel Chodilef</p>
+      <p class="text-center name">
+        <!-- {{ title }} -->
+        {{ p.nombre + " " + p.apellido }}
+      </p>
     </div>
     <!-- ?AcercaDe -->
-    <div class="col-lg-8 bg-gradient bg-black">
+    <div class="col-xl-8 bg-gradient bg-black p-3">
       <div class="d-flex justify-content-between align-items-center pt-3">
         <h2>Portfolio</h2>
-        <button class="btn btn-outline-light btn-sm">Editar About</button>
+        <button class="btn btn-outline-light btn-sm rounded-pill disabled">
+          Editar About
+        </button>
       </div>
       <span><hr /></span>
       <!--! PARRAFOS DE BASE DE DATOS -->
-      <article class="card-body">
+      <article class="container" *ngFor="let ab of ab">
         <p>
-          {{ acercaDe.parrafouno }}
+          {{ ab.parr1 }}
           <span>
-            <b> {{ title }}. </b>
+            <b>[{{ title }}]</b>
           </span>
+          .
           <br />
-          {{ acercaDe.parrafodos }}
-          <b> {{ subtitle }}</b>
+          {{ ab.parr2 }}
+          <b> {{ subtitle }}.</b>
         </p>
-        <br />
+
         <p>
-          {{ acercaDe.parrafotres }}
+          "Soy un joven adulto oriundo de Chubut, Argentina, de la localidad de
+          Lago Puelo para ser preciso. Lugar maravilloso donde habita un paisaje
+          hermoso lleno de vida y naturaleza, donde tuve el privilegio de
+          crecer."
+        </p>
+
+        <p>
+          {{ ab.parr3 }}
+          {{ ab.parr4 }}
         </p>
         <br />
         <p class="mt-5 text-center">
-          {{ acercaDe.Extra }}<br />
+          {{ ab.parr5 }}
+          <br />
           <b class="text-warning">
-            {{ acercaDe.ExtraHab }}
+            {{ ab.parr6 }}
           </b>
           <br />
-          <i class="text-secondary"> {{ acercaDe.Final }} </i>
+          <i class="text-secondary">
+            {{ ab.parr7 }}
+          </i>
         </p>
       </article>
     </div>
   </section>
 </main>
 <app-footer></app-footer>
+<!-- 
+  {
+    "id": 0,
+    "parrafo1": "Esta es una breve descripción de mi Trabajo Integrador y Portfolio: ",
+    "parrafo2": "Gracias al curso 'Argentina Programa', Me estoy desarrollando como...",
+    "parrafo3": "Me complace decir que este portfolio pude realizarlo mediante mis conocimientos aprendidos como ‘Front End’. Descubrí que me interesa mucho la presentación y la composición del mismo, los aportes que pueda dar y las ideas que pueda capturar.",
+    "parrafo4": "Me emociona aún más imaginar los futuros trabajos dinamicos que llegare a realizar y terminar. ¡Doy fe que voy a desarrollarme paso a paso para llegar a ser un “developer” eficiente, con los esfuerzos que se requieran! :D",
+    "parrafo5": "Estoy desarrollando mis habilidades en: ",
+    "parrafo6": "HTML , CSS , JAVASCRIPT , TYPESCRIPT , ANGULAR CLI , SQL , JAVA ...",
+    "parrafo7": "Sigo Desarrollando..."
+  }
+ -->
+<!-- 
+  <article class="container">
+        <p>
+          {{ acercaDe.parrafo1 }}
+          <span>
+            <b>[{{ title }}]</b>...
+          </span>
+          <br />
+          {{ acercaDe.parrafo2 }}
+          <b> {{ subtitle }}.</b>
+        </p>
+
+        <p>
+          {{ acercaDe.parrafo3 }}
+          {{ acercaDe.parrafo4 }}
+        </p>
+        <br />
+        <p class="mt-5 text-center">
+          {{ acercaDe.parrafo5 }}
+          <br />
+          <b class="text-warning">
+            {{ acercaDe.parrafo6 }}
+          </b>
+          <br />
+          <i class="text-secondary">
+            {{ acercaDe.parrafo7 }}
+          </i>
+        </p>
+      </article>
+ -->

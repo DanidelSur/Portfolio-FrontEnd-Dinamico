@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { tap } from 'rxjs';
 import { PortfolioService } from 'src/app/Service/portfolio.service';
 
 @Component({
@@ -7,13 +8,14 @@ import { PortfolioService } from 'src/app/Service/portfolio.service';
   styleUrls: ['./skills.component.css'],
 })
 export class SkillsComponent implements OnInit {
-  progreso = '60';
   habilidades: any;
-  constructor(private skil: PortfolioService) {}
+
+  constructor(private svcSkills: PortfolioService) {}
 
   ngOnInit(): void {
-    this.skil.ObtenerDatos().subscribe((data) => {
-      this.habilidades = data.habilidad;
-    });
+    this.svcSkills
+      .datosSkills()
+      .pipe(tap((res) => (this.habilidades = res)))
+      .subscribe();
   }
 }

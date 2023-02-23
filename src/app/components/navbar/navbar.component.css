@@ -10,7 +10,7 @@ button {
 nav {
   display: flex;
   justify-content: space-between;
-
+  transform: translateY(20%);
   /* margin: 5px; */
 }
 button img {
@@ -19,4 +19,22 @@ button img {
 }
 button img:hover {
   filter: drop-shadow(0 0 10px white);
+}
+/* *prueba animacion */
+img {
+  filter: drop-shadow(5px gold);
+  /* filter: linear-gradient(90deg, #0b333b, #00000000); */
+  background-size: 200% 200%;
+  animation: anim 2.5s infinite ease-in-out;
+}
+@keyframes anim {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }

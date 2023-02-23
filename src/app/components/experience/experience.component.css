@@ -1,5 +1,6 @@
 img {
   max-width: 240px;
+  border-radius: 10px;
 }
 
 article {
@@ -13,7 +14,9 @@ article {
 h4 {
   margin: 0;
   padding: 3px;
-  border-bottom: 1px solid seagreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* color: lightseagreen; */
+  /* border-bottom: 1px solid seagreen; */
   /* border: 2px solid black; */
 }
 

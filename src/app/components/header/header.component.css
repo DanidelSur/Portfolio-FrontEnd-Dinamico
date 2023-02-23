@@ -1,17 +1,30 @@
 header {
   margin-top: 5rem;
   text-align: center;
+  /* border: 1px solid wheat; */
+}
+main {
+  /* border: 5px solid wheat; */
+  height: 60vh;
 }
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 124px;
+  transition: 0.5s linear;
+  /* font-family: inherit; */
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-size: 125px;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.719);
+}
+.chodilef {
+  font-family: "Amatic SC", cursive, Impact, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
 }
 p {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Exo 2", sans-serif;
   margin-bottom: -25px;
 }
 hr {
-  transition: 1s linear;
+  transition: 0.5s linear;
   opacity: 15%;
   color: blanchedalmond;
   /* display: flex; */
@@ -19,6 +32,7 @@ hr {
   width: 25%;
 }
 button {
+  font-family: consolas;
   margin: 25px;
   transform: translateY(100px);
 }
@@ -26,12 +40,15 @@ button {
 main:hover hr {
   opacity: 75%;
   color: wheat;
-  width: 75%;
+  width: 45%;
 }
 main:hover h1 {
-  color: white;
-  text-shadow: 0 0 1px skyblue, 0 0 5px wheat, 0 0 10px lightskyblue;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  color: none;
+  opacity: 80%;
+  text-shadow: 0 0 1px lightskyblue, 0px 0px 5px black, 0 0 10px linen;
 }
+
 span {
   transition: 1s linear;
 }

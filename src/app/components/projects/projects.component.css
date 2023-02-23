@@ -9,7 +9,7 @@ article {
   background: linear-gradient(#000000a2, #c1c1c100);
 }
 h3 {
-  border-bottom: 1px solid lightblue;
+  /* border-bottom: 1px solid lightblue; */
   margin: 5px;
 }
 

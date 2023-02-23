@@ -2,7 +2,9 @@
 <main class="container">
   <h2>
     Estudios
-    <button class="btn btn-sm btn-outline-light">Edit</button>
+    <button class="btn btn-sm btn-outline-danger rounded-pill disabled">
+      Edit
+    </button>
   </h2>
   <hr />
   <section class="row">
@@ -11,14 +13,10 @@
         <article class="col-lg-6">
           <h3 class="card-header">
             {{ ed.name }}
-            <button class="btn btn-sm btn-outline-danger m-1">Editar</button>
+            <!-- <button class="btn btn-sm btn-outline-danger m-1">Editar</button> -->
           </h3>
-          <div class="d-flex row">
-            <img
-              src="../../../assets/Educacion/Colegio.png"
-              class="col-lg d-grid mx-auto"
-              alt=""
-            />
+          <div class="d-flex row p-2">
+            <img [src]="ed.imagen" class="col-lg d-grid mx-auto" alt="" />
             <!-- <hr /> -->
             <div class="col-lg p-2">
               <div class="card-body">

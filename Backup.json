@@ -1,0 +1,200 @@
+{
+  "persona": {
+    "id": 0,
+    "nombre": "Marcelo Daniel",
+    "apellido": "Chodilef",
+    "dni": 41475912,
+    "telefono": 2944897015,
+    "domicilio": "Lago Puelo, CHUBUT, Argentina",
+    "descripcion": "Soy un joven adulto oriundo de Chubut, Argentina, de la localidad de Lago Puelo para ser preciso. Lugar maravilloso donde habita un paisaje hermoso lleno de vida y naturaleza, donde tuve el privilegio de crecer.",
+    "foto": {
+      "id": 0,
+      "src": "../../../assets/AcercaDe/Perfil.JPG"
+    }
+  },
+  "imagen": {
+    "id": 0,
+    "src": "../../../assets/AcercaDe/Perfil.JPG"
+  },
+  "about": [
+    {
+      "id": 0,
+      "parr1": "Esta es una breve descripción de mi Trabajo Integrador y Portfolio: ",
+      "parr2": "Gracias al curso 'Argentina Programa', Me estoy desarrollando como...",
+      "parr3": "Me complace decir que este portfolio pude realizarlo mediante mis conocimientos aprendidos como ‘Front End’. Descubrí que me interesa mucho la presentación y la composición del mismo, los aportes que pueda dar y las ideas que pueda capturar.",
+      "parr4": "Me emociona aún más imaginar los futuros trabajos dinamicos que llegare a realizar y terminar. ¡Doy fe que voy a desarrollarme paso a paso para llegar a ser un “developer” eficiente, con los esfuerzos que se requieran! :D",
+      "parr5": "Estoy desarrollando mis habilidades en: ",
+      "parr6": "HTML , CSS , JAVASCRIPT , TYPESCRIPT , ANGULAR CLI , SQL , JAVA ...",
+      "parr7": "Sigo Desarrollando..."
+    }
+  ],
+  "experience": [
+    {
+      "id": 0,
+      "name": "Front-End",
+      "description": "El front-end developer se encarga de construir la parte visible y la experiencia de usuario de un sitio web, una aplicación, un sistema digital. Trabaja en la interfaz pero no se limita a concebir la parte gráfica de un objeto digital.",
+      "start": "02/02/2017",
+      "end": "09/09/2030",
+      "imagen": "../../../assets/Experiencias/Front-end.png"
+    },
+    {
+      "id": 1,
+      "name": "Back-End",
+      "description": "El Back End Developer es la persona encargada de la implementación de un sitio web o aplicación web en todos sus componentes, y se ocupa de diseñar la lógica y las soluciones para un sitio o aplicación web sean ejecutadas correctamente.",
+      "start": "10/01/2015",
+      "end": "20/12/2018",
+      "imagen": "../../../assets/Experiencias/Back-end.png"
+    },
+    {
+      "id": 2,
+      "name": "Agregar Nombre de Experiencia",
+      "description": "Ingrese una descripcion.",
+      "start": "00/00/0000",
+      "end": "00/00/0000",
+      "imagen": "../../../assets/Experiencias/programador.png"
+    }
+  ],
+  "education": [
+    {
+      "id": 0,
+      "name": "Colegio Secundario N°765 'Roca del Tiempo'",
+      "description": "Ubicado en la ciudad de Lago Puelo, Chubut. Egresado en Orientacion a Bachillerato de Educación Fisica. ",
+      "start": "07/03/2011",
+      "end": "13/12/2017",
+      "imagen": "../../../assets/Educacion/Colegio.png"
+    },
+    {
+      "id": 1,
+      "name": "Diagnostico y Mantenimiento de PC",
+      "description": "Curso de informatica, con el objetivo de aprender sobre... Redes Lan, Hardware del Pc, Sistemas Operativos.",
+      "start": "04/10/2016",
+      "end": "10/03/2017",
+      "imagen": "../../../assets/Educacion/Educacion.png"
+    },
+    {
+      "id": 2,
+      "name": "Agregar Nombre de Educación",
+      "description": "Ingrese Descripcion",
+      "start": "00/00/0000",
+      "end": "00/00/0000",
+      "imagen": "../../../assets/Educacion/Education.png"
+    }
+  ],
+  "skills": [
+    {
+      "id": 0,
+      "name": "HTML",
+      "progress": 60,
+      "img": "../../../assets/Habilidades/HTML.png",
+      "color": "bg-danger"
+    },
+    {
+      "id": 1,
+      "name": "CSS",
+      "img": "../../../assets/Habilidades/CSS.png",
+      "progress": 75,
+      "color": "bg-primary"
+    },
+    {
+      "id": 2,
+      "name": "JAVASCRIPT",
+      "img": "../../../assets/Habilidades/JAVASCRIPT.png",
+      "progress": 50,
+      "color": "bg-warning"
+    },
+    {
+      "id": 3,
+      "name": "TYPESCRIPT",
+      "img": "../../../assets/Habilidades/TYPESCRIPT.png",
+      "progress": 50,
+      "color": "bg-secondary"
+    },
+    {
+      "id": 4,
+      "name": "ANGULAR cli",
+      "img": "../../../assets/Habilidades/angular.png",
+      "progress": 60,
+      "color": "bg-danger"
+    },
+    {
+      "id": 5,
+      "name": "MySQL",
+      "img": "../../../assets/Habilidades/MySQL.png",
+      "progress": 40,
+      "color": "bg-info"
+    },
+    {
+      "id": 6,
+      "name": "JAVA",
+      "img": "../../../assets/Habilidades/JAVA.png",
+      "progress": 30,
+      "color": "bg-success"
+    }
+  ],
+  "projects": [
+    {
+      "id": 0,
+      "name": "Portfolio",
+      "description": "Portfolio Web Personal, Desarrollado por los conocimientos Aprendidos del Curso 'ARGENTINA PROGRAMA', cuyo objetivo es Aprender Conocimientos del Desarrollo Web y de la Programacion.",
+      "url": "www.chodilef.com.ar",
+      "imagen": "../../../assets/Proyectos/Portfolio.png"
+    },
+    {
+      "id": 1,
+      "name": "Agregar Nombre de Proyecto",
+      "description": "Ingrese una descripcion",
+      "url": "Ingrese una direccion",
+      "imagen": "../../../assets/Proyectos/Proyectos.png"
+    }
+  ],
+  "social": [
+    {
+      "id": 0,
+      "redsocial": "Facebook",
+      "enlace": "https://www.facebook.com/marcel.chodilef.9",
+      "imagen": "../../../assets/RedesSociales/facebook.png"
+    },
+    {
+      "id": 1,
+      "redsocial": "GitHub",
+      "enlace": "https://github.com/DanidelSur",
+      "imagen": "../../../assets/RedesSociales/github.png"
+    },
+    {
+      "id": 2,
+      "redsocial": "Instagram",
+      "enlace": "https://www.instagram.com/marcel.chdlf/",
+      "imagen": "../../../assets/RedesSociales/instagram.png"
+    },
+    {
+      "id": 3,
+      "redsocial": "Gmail",
+      "enlace": "https://www.marcechodilef@gmail.com",
+      "imagen": "../../../assets/RedesSociales/Gmail_icon.png"
+    },
+    {
+      "id": 4,
+      "redsocial": "Telegram",
+      "enlace": "https://t.me/Gorurso",
+      "imagen": "../../../assets/RedesSociales/Telegram_icon.png"
+    },
+    {
+      "id": 5,
+      "redsocial": "Twitter",
+      "enlace": "https://twitter.com/Marceus98",
+      "imagen": "../../../assets/RedesSociales/Twitter_icon.png"
+    },
+    {
+      "id": 6,
+      "redsocial": "WhatsApp",
+      "enlace": "#2944-897015",
+      "imagen": "../../../assets/RedesSociales/Whatsapp_icon.png"
+    },
+    {
+      "id": 7,
+      "redsocial": "",
+      "enlace": "",
+      "imagen": "../../../assets/Extras/Agregar_icon.png"
+    }
+  ]
+}

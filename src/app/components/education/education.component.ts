@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { tap } from 'rxjs';
 import { PortfolioService } from 'src/app/Service/portfolio.service';
 
 @Component({
@@ -7,14 +8,13 @@ import { PortfolioService } from 'src/app/Service/portfolio.service';
   styleUrls: ['./education.component.css'],
 })
 export class EducationComponent implements OnInit {
-  FchaInicio = 'Base de Datos';
-  Finalizacion = 'Base de datos';
   education: any;
-  constructor(private educ: PortfolioService) {}
+  constructor(private svcEd: PortfolioService) {}
 
   ngOnInit(): void {
-    this.educ.ObtenerDatos().subscribe((data) => {
-      this.education = data.edu;
-    });
+    this.svcEd
+      .datosEduc()
+      .pipe(tap((res) => (this.education = res)))
+      .subscribe();
   }
 }

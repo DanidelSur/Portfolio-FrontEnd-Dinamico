@@ -6,13 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  entrar(): void {
-    document.addEventListener('submit', (e) => {
-      alert('Diste Click');
-    });
-  }
-
   constructor() {}
 
   ngOnInit(): void {}
+
+  login(): void {
+    // document.addEventListener()
+  }
 }

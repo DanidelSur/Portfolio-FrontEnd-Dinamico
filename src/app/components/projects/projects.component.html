@@ -2,7 +2,9 @@
 <main class="container">
   <h2>
     Proyectos Realizados
-    <button class="btn btn-sm btn-outline-light">Edit</button>
+    <button class="btn btn-sm btn-outline-info rounded-pill disabled">
+      Edit
+    </button>
   </h2>
   <hr />
   <section>
@@ -11,7 +13,7 @@
         <article>
           <h3 class="card-header">{{ pro.name }}</h3>
           <div class="d-flex">
-            <img [src]="pro.img" alt="" />
+            <img [src]="pro.imagen" alt="" />
             <div class="card-body">
               <b>Descripcion: </b> <br />
               <p>

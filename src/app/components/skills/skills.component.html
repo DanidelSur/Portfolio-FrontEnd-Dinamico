@@ -2,7 +2,9 @@
 <main class="container">
   <h2>
     Habilidades
-    <button class="btn-sm btn btn-outline-success">Edit</button>
+    <button class="btn-sm btn btn-outline-warning disabled rounded-pill">
+      Edit
+    </button>
   </h2>
   <hr />
   <section>
@@ -16,15 +18,20 @@
             <h3>{{ Skill.name }}</h3>
             <div class="progress bg-black border-end">
               <div
+                id="progress"
                 class="progress-bar progress-bar-striped {{
-                  Skill.bstrap
+                  Skill.color
                 }} progress-bar-animated"
                 role="progressbar"
                 aria-valuenow="0"
                 aria-valuemin="0"
                 aria-valuemax="100"
-                style="width: {{ Skill.nivel }}"
-              ></div>
+                style="width: {{ Skill.progress + '%' }}"
+              >
+                <h5 class="text-dark text-center m-0 p-0 text-start">
+                  {{ Skill.progress }}%
+                </h5>
+              </div>
             </div>
             <!-- </div> -->
           </div>
